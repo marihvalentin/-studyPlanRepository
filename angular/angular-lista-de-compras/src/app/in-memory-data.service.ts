@@ -5,8 +5,8 @@ import { Item } from './item';
 @Injectable({
   providedIn: 'root'
 })
-export class InMemoryDataService {
-  createDb(){
+export class InMemoryDataService implements InMemoryDbService{
+  createDb() {
     const itens = [
       {id: 1, qtd: '5kg', descricao: 'Arroz'},
       {id: 2, qtd: '500g', descricao: 'Farofa'},
