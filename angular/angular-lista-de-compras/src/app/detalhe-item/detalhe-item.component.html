@@ -1,0 +1,11 @@
+<div *ngIf="item">
+    <h2>Detalhes do item: {{item.descricao}}</h2>
+    <div>
+        <label>Descrição: 
+            <input [(ngModel)]="item.descricao" placeholder="descricao"/>
+        </label>
+        <label>Quantidade: 
+            <input [(ngModel)]="item.qtd" placeholder="qtd"/>
+        </label>
+    </div>
+</div>>
