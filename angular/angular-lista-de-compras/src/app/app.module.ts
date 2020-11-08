@@ -10,13 +10,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './in-memory-data.service';
 import { MensagensComponent } from './mensagens/mensagens.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ItensComponent,
     DetalheItemComponent,
-    MensagensComponent
+    MensagensComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
