@@ -1,10 +1,10 @@
 <h2>Meus itens</h2>
 
 <ul class="itens">
-    <li *ngFor="let item of itens"
-    [class.selected]="item === selectedItem"
-    (click)="onSelect(item)">
-    <span class="badge">{{item.qtd}} {{item.descricao}}</span>
+    <li *ngFor="let item of itens">
+        <a routerLink="/detalhe/{{item.id}}">
+            <span class="badge">{{item.id}}</span> {{item.qtd}} {{item.descricao}}
+        </a>
     </li>
 </ul>
 
