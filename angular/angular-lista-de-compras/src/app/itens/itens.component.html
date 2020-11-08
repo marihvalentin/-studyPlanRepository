@@ -1,1 +1,11 @@
-<h2>Lista de Compras</h2>
+<h2>Meus itens</h2>
+
+<ul class="itens">
+    <li *ngFor="let item of itens"
+    [class.selected]="item === selectedItem"
+    (click)="onSelect(item)">
+    <span class="badge">{{item.qtd}} {{item.descricao}}</span>
+    </li>
+</ul>
+
+<app-detalhe-item [item]="selectedItem"></app-detalhe-item>
