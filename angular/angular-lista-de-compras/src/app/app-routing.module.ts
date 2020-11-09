@@ -6,9 +6,9 @@ import { ItensComponent } from './itens/itens.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/dashboard', pathMatch: 'full'}, //rota padrão
-  {path: 'itens', component: ItensComponent},
   {path: 'dashboard', component: DashboardComponent},
-  {path: 'detalhe/:id', component: DetalheItemComponent}
+  {path: 'detalhe/:id', component: DetalheItemComponent},
+  {path: 'itens', component: ItensComponent}
 ];
 
 @NgModule({

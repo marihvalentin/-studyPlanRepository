@@ -11,7 +11,7 @@ h2 {
     font-family: Cambria, Georgia;
   }
   
-  button.clear {
+  button.limpar {
     font-family: Arial;
     background-color: #eee;
     border: none;
@@ -28,7 +28,7 @@ h2 {
     color: #aaa;
     cursor: auto;
   }
-  button.clear {
+  button.limpar {
     color: #333;
     margin-bottom: 12px;
   }

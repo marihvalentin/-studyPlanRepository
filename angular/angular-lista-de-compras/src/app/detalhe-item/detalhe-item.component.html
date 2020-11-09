@@ -1,12 +1,13 @@
 <div *ngIf="item">
     <h2>Detalhes do item: {{item.descricao}}</h2>
     <div>
+        <span>id: </span>{{item.id}}
+    </div>
+    <div>
         <label>Descrição: 
             <input [(ngModel)]="item.descricao" placeholder="descricao"/>
         </label>
-        <label>Quantidade: 
-            <input [(ngModel)]="item.qtd" placeholder="qtd"/>
-        </label>
     </div>
+    <button (click)="salvar()">Salvar</button>
     <button (click)="voltar()">Voltar</button>
-</div>>
+</div>

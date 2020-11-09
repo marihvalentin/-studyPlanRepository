@@ -1,8 +1,11 @@
 <h3>Itens</h3>
 <div class="grid grid-pad">
   <a *ngFor="let item of itens" class="col-1-4"
-      routerLink="/detalhes/{{item.id}}">
+      routerLink="/detalhe/{{item.id}}">
+      <div class="module item">
+        <h4>{{item.descricao}}</h4>
+      </div>
   </a>
 </div>
 
-<app-detalhe-item></app-detalhe-item>
+<app-busca-item></app-busca-item>

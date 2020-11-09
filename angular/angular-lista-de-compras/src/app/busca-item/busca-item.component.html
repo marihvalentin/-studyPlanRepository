@@ -1,12 +1,12 @@
-<div id="search-component">
+<div id="busca-item-component">
     <h4><label for="search-box">Busca de Item</label></h4>
   
     <input #searchBox id="search-box" (input)="busca(searchBox.value)" />
   
-    <ul class="search-result">
+    <ul class="result-busca">
       <li *ngFor="let item of itens$ | async" >
         <a routerLink="/detalhe/{{item.id}}">
-         {{item.qtd}} {{item.descricao}}
+           {{item.descricao}}
         </a>
       </li>
     </ul>

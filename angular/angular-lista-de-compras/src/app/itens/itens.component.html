@@ -1,11 +1,18 @@
 <h2>Meus itens</h2>
+<div>
+    <label>Descrição do Item:
+        <input #itemDescricao />
+    </label>
+    <button (click)="adicionar(itemDescricao.value); itemDescricao.value=''">
+      Adicionar
+    </button>
+</div>
 
 <ul class="itens">
-    <li *ngFor="let item of itens">
-        <a routerLink="/detalhe/{{item.id}}">
-            <span class="badge">{{item.id}}</span> {{item.qtd}} {{item.descricao}}
-        </a>
-    </li>
-</ul>
-
-<app-detalhe-item [item]="selectedItem"></app-detalhe-item>
+        <li *ngFor="let item of itens">
+            <a routerLink="/detalhe/{{item.id}}">
+                <span class="badge">{{item.id}}</span> {{item.descricao}}
+            </a>
+            <button class="delete" title="delete item" (click)="excluir(item)">Excluir</button>
+        </li>
+    </ul>

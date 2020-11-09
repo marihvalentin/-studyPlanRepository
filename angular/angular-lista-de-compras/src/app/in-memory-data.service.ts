@@ -8,20 +8,17 @@ import { Item } from './item';
 export class InMemoryDataService implements InMemoryDbService{
   createDb() {
     const itens = [
-      {id: 1, qtd: '5kg', descricao: 'Arroz'},
-      {id: 2, qtd: '500g', descricao: 'Farofa'},
-      {id: 3, qtd: '4L', descricao: 'Leite'},
-      {id: 4, qtd: '700g', descricao: 'Bacon'},
-      {id: 5, qtd: '3kg', descricao: 'Açúcar'}
+      {id: 6, descricao: '5kg de Arroz'},
+      {id: 7, descricao: '500g de Farofa'},
+      {id: 8, descricao: '4L de Leite'},
+      {id: 9, descricao: '700g de Bacon'},
+      {id: 10, descricao: '3kg de Açúcar'}
     ];
     return {itens};
   }
 
   //incremento de novos itens com id gerado automaticamente
   genId(itens: Item[]): number {
-    return itens.length > 0 ? Math.max(...itens.map(item => item.id)) + 1 : 1;
+    return itens.length > 0 ? Math.max(...itens.map(item => item.id)) + 1 : 6;
   }
-  
-
-  constructor() { }
 }

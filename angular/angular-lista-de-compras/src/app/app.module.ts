@@ -11,6 +11,7 @@ import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './in-memory-data.service';
 import { MensagensComponent } from './mensagens/mensagens.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { BuscaItemComponent } from './busca-item/busca-item.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     ItensComponent,
     DetalheItemComponent,
     MensagensComponent,
-    DashboardComponent
+    DashboardComponent,
+    BuscaItemComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +31,6 @@ import { DashboardComponent } from './dashboard/dashboard.component';
       InMemoryDataService, { dataEncapsulation: false }
     )
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
